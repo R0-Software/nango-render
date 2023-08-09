@@ -27,9 +27,10 @@ services:
           - key: SERVER_PORT
             value: 443
           - key: NANGO_ENCRYPTION_KEY
-            generateValue: true
+            fromGroup: nango
+              value: NANGO_ENCRYPTION_KEY
           - key: NANGO_DASHBOARD_USERNAME
-            value: "r0-admin"
+            value: "admin"
           - key: NANGO_DASHBOARD_PASSWORD
             generateValue: true
           - key: TELEMETRY
