@@ -2,7 +2,7 @@ services:
     - type: web
       name: nango-server
       env: docker
-      repo: https://github.com/NangoHQ/nango-render
+      repo: https://github.com/R0-Software/nango-render
       plan: free 
       branch: main
       envVars:
@@ -26,6 +26,14 @@ services:
             value: TRUE
           - key: SERVER_PORT
             value: 443
+          - key: NANGO_ENCRYPTION_KEY
+            generateValue: true
+          - key: NANGO_DASHBOARD_USERNAME
+            value: "r0-admin"
+          - key: NANGO_DASHBOARD_PASSWORD
+            generateValue: true
+          - key: TELEMETRY
+            value: false
 databases:
     - name: nango-db
       databaseName: nango
