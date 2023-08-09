@@ -6,7 +6,7 @@ services:
       plan: free 
       branch: main
       envVars:
-          - fromGroup: nango
+          - fromGroup: Nango
           - key: NANGO_DB_NAME
             fromDatabase:
                 name: nango-db
