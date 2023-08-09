@@ -1,5 +1,5 @@
 ## tl;dr
-This is a blueprint for Render.com to create a public [Nango](https://nango.dev) web service with a username/password. This template expects you to have an environment group title "Nango" and an environment varirable `NANGO_ENCRYPTION_KEY`. This key needs to be a 32 byte base64 encoded string. You can also update these variable names in the render.yaml file.
+This is a blueprint for Render.com to create a public [Nango](https://nango.dev) web service with a dashboard username (`admin`)/password (randomly generated env var). This template expects you to already have an environment group title "Nango" and an environment varirable `NANGO_ENCRYPTION_KEY`. This key needs to be a 32 byte base64 encoded string. You can also update these variable names in the render.yaml file.
 
 Deploy Nango with Render:
 

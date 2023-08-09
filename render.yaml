@@ -28,7 +28,7 @@ services:
             value: 443
           - key: NANGO_ENCRYPTION_KEY
             fromGroup: nango
-              value: NANGO_ENCRYPTION_KEY
+              name: NANGO_ENCRYPTION_KEY
           - key: NANGO_DASHBOARD_USERNAME
             value: "admin"
           - key: NANGO_DASHBOARD_PASSWORD
