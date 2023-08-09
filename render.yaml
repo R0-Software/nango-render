@@ -6,6 +6,7 @@ services:
       plan: free 
       branch: main
       envVars:
+          - fromGroup: nango
           - key: NANGO_DB_NAME
             fromDatabase:
                 name: nango-db
@@ -26,9 +27,6 @@ services:
             value: TRUE
           - key: SERVER_PORT
             value: 443
-          - key: NANGO_ENCRYPTION_KEY
-            fromGroup: nango
-              name: NANGO_ENCRYPTION_KEY
           - key: NANGO_DASHBOARD_USERNAME
             value: "admin"
           - key: NANGO_DASHBOARD_PASSWORD
