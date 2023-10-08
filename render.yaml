@@ -4,7 +4,7 @@ services:
       env: docker
       repo: https://github.com/R0-Software/nango-render
       plan: free 
-      branch: main
+      region: frankfurt
       envVars:
           - fromGroup: Nango
           - key: NANGO_DB_NAME
@@ -37,4 +37,5 @@ databases:
     - name: nango-db
       databaseName: nango
       user: nango
-      plan: free 
+      plan: free
+      region: frankfurt
